@@ -14,39 +14,7 @@ flowchart LR
 
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-# Install required packages for Bookdown and Quarto
-install.packages(c(
-  # Core packages for Bookdown and Quarto
-  "bookdown", "rmarkdown", "knitr",
-  
-  # Core visualization libraries
-  "ggplot2", "plotly", "lattice", "gridExtra", "cowplot", "patchwork",
-  
-  # Extended visualization and statistical analysis
-  "ggpubr", "ggstatsplot", "PerformanceAnalytics", "Hmisc", 
-  "corrplot", "ggcorrplot", "diagram", "igraph", "ggraph",
-  
-  # Tables and formatting
-  "kableExtra", "xtable", "flextable", "DT", "formattable",
-  
-  # Data manipulation and analysis
-  "dplyr", "tidyr", "data.table", "tibble", "forcats",
-  
-  # Spatial and interactive plotting
-  "sf", "leaflet", "tmap", "maps", "mapview",
-  
-  # Network and graph visualizations
-  "visNetwork", "networkD3", "sna", "Rgraphviz",
-  
-  # Quarto-specific enhancements
-  "pagedown", "tinytex", "reticulate", "bslib", "thematic", "shiny"
-))
-
-# Install TinyTeX for PDF rendering in both Bookdown and Quarto
-tinytex::install_tinytex()
-
-# Reminder: Quarto itself needs to be installed separately from https://quarto.org/
+```{}
 ```
 
 Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
